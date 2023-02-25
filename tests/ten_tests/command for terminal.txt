@@ -1,0 +1,6 @@
+#Commands for second task
+pytest -n 6 -m timed
+pytest -n=auto  -m timed
+#Commands for third task
+pytest -n 6 -m timed --junitxml=.\results\results.xml
+allure generate .\results\
