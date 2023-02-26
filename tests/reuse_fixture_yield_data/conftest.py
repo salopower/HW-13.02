@@ -7,7 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 @pytest.fixture(scope="package")
 def driver():
     options = webdriver.ChromeOptions()
-    options.headless = False
+    options.headless = True
     options.add_argument("--disable-extensions")
     options.add_argument('--start-maximized')
     driver = Chrome(ChromeDriverManager().install(), options=options)

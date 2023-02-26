@@ -8,11 +8,11 @@ parser.add_argument("-H", "--helpmsg", help="Show help message and exit", action
 
 args = parser.parse_args()
 
-if args.helpmsg:
-    print("Тут могла бути ваша... допомога =)")
-elif args.name == "Valentin":
-    print("Валєнтін, японскій бог, ти зачєм у ката яйца-та аткрутіл?!")
-elif args.name:
-    print(f"Welcome, {args.name}!")
+if args.name:
+    if args.name == "Valentin":
+        print('Валєнтін, японскій бог, ти зачєм у ката яйца-та аткрутіл?!')
+    else:
+        print('Welcome, ' + args.name + '!')
 else:
-    print("Welcome.")
+    print('Тут могла бути ваша... допомога =)')
+
